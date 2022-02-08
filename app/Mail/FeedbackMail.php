@@ -31,7 +31,7 @@ class FeedbackMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Свяжитесь с нами')
+        return $this->subject('Свяжитесь с нами - ' . $this->feedback['site'])
 		->view('feedback', ['data' =>  $this->feedback]);
     }
 }

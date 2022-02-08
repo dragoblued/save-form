@@ -18,5 +18,6 @@
 		<td>Message</td>
 		<td>{{ $feedback->message }}</td>
 	</tr>
+	
 </table>
 @endsection
